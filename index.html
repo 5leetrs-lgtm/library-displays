@@ -46,34 +46,42 @@
 
 <h2>Featured Displays</h2>
 
-<div class="display-grid">
-
-<div class="card">
-<h3>Cozy Mystery Display</h3>
-
-<p>A warm autumn display featuring mysteries and seasonal reads.</p>
-
-<span class="tag">Fall</span>
-<span class="tag">Adult</span>
-<span class="tag">Mystery</span>
-
-<br><br>
-
-<a href="displays/cozy-mystery.html">View Display</a>
+<div class="display-grid" id="display-container">
 
 </div>
 
-<div class="card">
-<h3>Dinosaur Discovery</h3>
-<p>A prehistoric adventure display for young readers.</p>
+<script>
+fetch('data/displays.json')
+.then(response => response.json())
+.then(displays => {
 
-<span class="tag">Children</span>
-<span class="tag">Science</span>
-<span class="tag">Dinosaurs</span>
+    const container = document.getElementById('display-container');
 
-</div>
+    displays.forEach(display => {
 
-</div>
+        const card = document.createElement('div');
+        card.className = 'card';
+
+        card.innerHTML = `
+            <h3>${display.title}</h3>
+
+            <p>${display.description}</p>
+
+            <span class="tag">${display.season}</span>
+            <span class="tag">${display.audience}</span>
+            <span class="tag">${display.theme}</span>
+
+            <br><br>
+
+            <a href="${display.page}">View Display</a>
+        `;
+
+        container.appendChild(card);
+
+    });
+
+});
+</script>
 
 </body>
 </html>
