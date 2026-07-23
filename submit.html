@@ -3,6 +3,55 @@
 
 <head>
     <title>Submit a Library Display</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #faf8f5;
+        }
+
+        h1 {
+            color: #3b3b3b;
+        }
+
+        form {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            max-width: 600px;
+            box-shadow: 0 2px 8px #ddd;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+
+        textarea {
+            height: 120px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #3b3b3b;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .checkbox-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .checkbox-group label {
+            width: 45%;
+        }
+    </style>
 </head>
 
 <body>
@@ -16,41 +65,28 @@ Share a display you are proud of with library staff everywhere!
 <form>
 
 <label>Display Title</label><br>
-<input type="text"><br><br>
+<input type="text" placeholder="Example: Cozy Mystery Corner">
+
+<br><br>
 
 <label>Description</label><br>
-<textarea></textarea><br><br>
+<textarea placeholder="Describe your display, inspiration, and process."></textarea>
+
+<br><br>
 
 <label>Library Name (optional)</label><br>
-<input type="text"><br><br>
+<input type="text">
+
+<br><br>
 
 <label>State</label><br>
-<input type="text"><br><br>
-
-<label>Audience</label><br>
-<select>
-<option>Children</option>
-<option>Teen</option>
-<option>Adult</option>
-<option>All Ages</option>
-</select>
-
-<br><br>
-
-<label>Season</label><br>
-<select>
-<option>Spring</option>
-<option>Summer</option>
-<option>Fall</option>
-<option>Winter</option>
-</select>
-
-<br><br>
+<input type="text">
 
 <br><br>
 
 <label>Library Type</label><br>
 <select>
+<option>Choose one</option>
 <option>Public Library</option>
 <option>School Library</option>
 <option>Academic Library</option>
@@ -59,20 +95,42 @@ Share a display you are proud of with library staff everywhere!
 
 <br><br>
 
+<label>Audience</label><br>
+<div class="checkbox-group">
+<label><input type="checkbox"> Children's</label>
+<label><input type="checkbox"> Teen</label>
+<label><input type="checkbox"> Adult</label>
+<label><input type="checkbox"> All Ages</label>
+</div>
+
+<br>
+
+<label>Season</label><br>
+<div class="checkbox-group">
+<label><input type="checkbox"> Spring</label>
+<label><input type="checkbox"> Summer</label>
+<label><input type="checkbox"> Fall</label>
+<label><input type="checkbox"> Winter</label>
+</div>
+
+<br>
+
 <label>Display Size</label><br>
 <select>
+<option>Choose one</option>
 <option>Shelf Display</option>
 <option>Endcap</option>
 <option>Table Display</option>
 <option>Wall Display</option>
 <option>Window Display</option>
-<option>Room Display</option>
+<option>Room/Installation</option>
 </select>
 
 <br><br>
 
 <label>Budget</label><br>
 <select>
+<option>Choose one</option>
 <option>Free</option>
 <option>Under $10</option>
 <option>$10-$25</option>
@@ -83,18 +141,48 @@ Share a display you are proud of with library staff everywhere!
 <br><br>
 
 <label>Theme</label><br>
-<input type="text" placeholder="Example: Mystery, Fantasy, Gardening">
+<div class="checkbox-group">
+<label><input type="checkbox"> Adventure</label>
+<label><input type="checkbox"> Animals</label>
+<label><input type="checkbox"> Arts & Crafts</label>
+<label><input type="checkbox"> Fantasy</label>
+<label><input type="checkbox"> Food & Cooking</label>
+<label><input type="checkbox"> History</label>
+<label><input type="checkbox"> Horror</label>
+<label><input type="checkbox"> Mystery</label>
+<label><input type="checkbox"> Nature</label>
+<label><input type="checkbox"> Romance</label>
+<label><input type="checkbox"> Science/STEM</label>
+<label><input type="checkbox"> Sports</label>
+<label><input type="checkbox"> Holidays</label>
+<label><input type="checkbox"> Cultural Heritage</label>
+</div>
 
-<br><br>
-
-<label>Tags</label><br>
-<input type="text" placeholder="Example: pumpkins, cozy, fall">
-
-<br><br>
+<br>
 
 <label>Materials Used</label><br>
-<input type="text" placeholder="Example: Cricut, cardstock, recycled materials">
-    
+<div class="checkbox-group">
+<label><input type="checkbox"> Cricut</label>
+<label><input type="checkbox"> Canva</label>
+<label><input type="checkbox"> Printed Graphics</label>
+<label><input type="checkbox"> Hand Lettering</label>
+<label><input type="checkbox"> Recycled Materials</label>
+<label><input type="checkbox"> Craft Supplies</label>
+<label><input type="checkbox"> 3D Printing</label>
+</div>
+
+<br>
+
+<label>Additional Tags</label><br>
+<input type="text" placeholder="Example: pumpkins, dragons, cozy, beach">
+
+<br><br>
+
+<label>Upload Photos</label><br>
+<input type="file" multiple>
+
+<br><br>
+
 <button type="submit">Submit Display</button>
 
 </form>
