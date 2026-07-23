@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Cozy Mystery Display",
+    "description": "A warm autumn display featuring mysteries, tea, and cozy reading.",
+    "audience": "Adult",
+    "season": "Fall",
+    "theme": "Mystery",
+    "size": "Small Display",
+    "budget": "Under $20",
+    "tags": [
+      "cozy",
+      "mystery",
+      "fall",
+      "tea"
+    ],
+    "page": "displays/cozy-mystery.html"
+  }
+]
