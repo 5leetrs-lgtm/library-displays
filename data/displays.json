@@ -14,5 +14,20 @@
       "tea"
     ],
     "page": "displays/cozy-mystery.html"
+  },
+  {
+    "title": "Dinosaur Discovery",
+    "description": "A prehistoric adventure display for young readers.",
+    "audience": "Children",
+    "season": "Summer",
+    "theme": "Science",
+    "size": "Table Display",
+    "budget": "Under $50",
+    "tags": [
+      "dinosaurs",
+      "science",
+      "children"
+    ],
+    "page": "displays/dinosaur-discovery.html"
   }
 ]
