@@ -2,6 +2,40 @@
 <html>
 <head>
     <title>Library Display Collective</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #faf8f5;
+        }
+
+        h1 {
+            color: #3b3b3b;
+        }
+
+        .display-grid {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            width: 250px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #ddd;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #e8e2d6;
+            padding: 5px 10px;
+            border-radius: 20px;
+            margin: 3px;
+            font-size: 14px;
+        }
+    </style>
 </head>
 
 <body>
@@ -10,9 +44,31 @@
 
 <p>A community showcase of creative library displays.</p>
 
-<h2>Coming Soon</h2>
-  
-<p>Browse inspiring displays from libraries everywhere.</p>
+<h2>Featured Displays</h2>
+
+<div class="display-grid">
+
+<div class="card">
+<h3>Cozy Mystery Display</h3>
+<p>A warm autumn display featuring mysteries and seasonal reads.</p>
+
+<span class="tag">Fall</span>
+<span class="tag">Adult</span>
+<span class="tag">Mystery</span>
+
+</div>
+
+<div class="card">
+<h3>Dinosaur Discovery</h3>
+<p>A prehistoric adventure display for young readers.</p>
+
+<span class="tag">Children</span>
+<span class="tag">Science</span>
+<span class="tag">Dinosaurs</span>
+
+</div>
+
+</div>
 
 </body>
 </html>
